@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - C:\Users\DanyaKO\Desktop\docker:\var\lib\postgresql
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dokha
+    ports:
+      - "5432:5432"
